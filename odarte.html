@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obras de Arte</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section>figure{
+           flex: 1;
+           min-width:300px;
+        }
+
+        section>figure:first-of-type img{
+            filter: blur(2px);
+        }
+
+        section>figure:first-of-type img:hover{
+            filter: blur();
+        }   
+
+        section>figure:nth-of-type(2) img{
+            filter: brightness(135%);
+        }
+
+        section>figure:nth-of-type(2) img:hover{
+            filter: brightness();
+        }
+
+        section>figure:nth-of-type(3) img {
+            filter: contrast(80%);
+        }
+
+        section>figure:nth-of-type(3) img:hover {
+            filter: contrast();
+        }
+
+        section>figure:nth-of-type(4) img{
+            filter: invert(100%) ;
+        }
+
+        section>figure:nth-of-type(4) img:hover {
+            filter: invert(0%);
+        }
+
+        section>figure:nth-of-type(5) img {
+            filter: grayscale(100%);
+        }
+
+        section>figure:nth-of-type(5) img:hover {
+            filter: grayscale(0%);
+        }
+
+        section>figure:nth-of-type(6) img {
+            filter: hue-rotate(79deg);
+        }
+
+        section>figure:nth-of-type(6) img:hover {
+            filter: hue-rotate(0deg);
+        }
+
+        section>figure:nth-of-type(7) img {
+            filter: invert(100%);
+        }
+
+        section>figure:nth-of-type(7) img:hover {
+            filter: invert(0%);
+        }
+
+        section>figure:nth-of-type(8) img{
+            filter: opacity(50%);
+        }
+
+        section>figure:nth-of-type(8) img:hover {
+            filter: opacity();
+        }
+
+        section>figure:nth-of-type(9) img {
+            filter: saturate(5%);
+        }
+
+        section>figure:nth-of-type(9) img:hover {
+            filter: saturate();
+        }
+    </style>    
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="img/logoHeader.jpg" alt="logo" title="logo" />
+        </figure>
+        <h1>ArteDeco "Un recorrido por el Arte"</h1>
+        <form action="">
+            <label for="">User:</label>
+            <input type="text" name="user" placeholder="User" />
+            <br />
+            <label for="">Password:</label>
+            <input type="text" name="password" placeholder="Password" />
+            <br />
+            <button type="submit">Login</button>
+        </form>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="artedc.html">Inicio</a></li>
+            <li><a href="paisaje.html">Paisajes</a></li>
+            <li><a href="retrato.html">Retratos</a></li>
+            <li><a id="activo" href="odarte.html">Obras de arte</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Galeria</h2>
+        <section>
+            <figure>
+                <img src="img/galeriaObraArte/angelomusicante.jpeg" alt="angelomusicante" title="angelomusicante" />
+            </figure>
+            <figure>
+                <img src="img/galeriaObraArte/annunciazione_leonardodavinci.jpeg" alt="annunciazione_leonardodavinci" title="annunciazione_leonardodavinci" />
+            </figure>
+            <figure>
+                <img src="img/galeriaObraArte/madonna-cardellino.jpg" alt="madonna-cardellino" title="madonna-cardellino" />
+            </figure>
+            <figure>
+                <img src="img/galeriaObraArte/maestadiognissanti.jpeg" alt="maestadiognissanti" title="maestadiognissanti" />
+            </figure>
+            <figure>
+                <img src="img/galeriaObraArte/medusa.jpg" alt="medusa" title="medusa" />
+            </figure>
+            <figure>
+                <img src="img/galeriaObraArte/nascitadivenere.jpeg" alt="nascitadivenere" title="nascitadivenere" />
+            </figure>
+            <figure>
+                <img src="img/galeriaObraArte/pieroFrancesca.jpg" alt="pieroFrancesca" title="pieroFrancesca" />
+            </figure>
+            <figure>
+                <img src="img/galeriaObraArte/tondodoni.jpeg" alt="tondodoni" title="tondodoni" />
+            </figure>
+            <figure>
+                <img src="img/galeriaObraArte/venerediurbino.jpg" alt="venerediurbino" title="venerediurbino" />
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>ARTEDECO</p>
+        <p>Para más información puede enviarnos un email:
+            <a href="mailto:gcaribe14@hotmail.com">Aquí</a>
+        </p>
+        <p>Si necesitas ayuda, llámanos al número de teléfono:
+            <a href="tel:+34640856854" tel="+34640856854">+34 640856854</a>
+        </p>
+        <p>&copy; 2023 ARTEDECO </p>
+    </footer>
+</body>
+
+</html>

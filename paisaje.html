@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paisajes</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section>figure {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        section>figure:first-of-type img:hover {
+            filter: blur(2px);
+            transform: translateX(0px) translateY(65px);
+        }
+
+        section>figure:nth-of-type(2) img:hover {
+            filter: brightness(135%);
+            transform: rotate(20deg);
+        }
+
+        section>figure:nth-of-type(3) img:hover {
+            filter: contrast(80%);
+            transform: skewX(10deg);
+        }
+
+        section>figure:nth-of-type(4) img:hover {
+            filter: drop-shadow(1px 3px 5px #cccccc);
+            transform: skewY(10deg);
+        }
+
+        section>figure:nth-of-type(5) img:hover {
+            filter: grayscale(100%);
+            transform: scaleX(1.1);
+        }
+
+        section>figure:nth-of-type(6) img:hover {
+            filter: hue-rotate(79deg);
+            transform: scaleY(1.2);
+        }
+
+        section>figure:nth-of-type(7) img:hover {
+            filter: invert(100%);
+            transform: scale(1.1 ,1.2);
+        }
+
+        section>figure:nth-of-type(8) img:hover {
+            filter: opacity(50%);
+            transform: matrix(-1.1, 0.2, -0.2, 1.1, 10, -15 );
+        }
+
+        section>figure:nth-of-type(9) img:hover {
+            filter: saturate(5%);
+            transform: rotate(10deg) scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="img/logoHeader.jpg" alt="logo" title="logo" />
+        </figure>
+        <h1>ArteDeco "Un recorrido por el Arte"</h1>
+        <form action="">
+            <label for="">User:</label>
+            <input type="text" name="user" placeholder="User" />
+            <br />
+            <label for="">Password:</label>
+            <input type="text" name="password" placeholder="Password" />
+            <br />
+            <button type="submit">Login</button>
+        </form>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="artedc.html">Inicio</a></li>
+            <li><a id="activo" href="paisaje.html">Paisajes</a></li>
+            <li><a href="retrato.html">Retratos</a></li>
+            <li><a href="odarte.html">Obras de arte</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Galeria</h2>
+        <section>
+            <figure>
+                <img src="img/galeriaPaisajes/amanece.jpg" alt="amanece" title="amanece" />
+            </figure>
+            <figure>
+                <img src="img/galeriaPaisajes/aurorab.jpg" alt="aurorab" title="aurorab" />
+            </figure>
+            <figure>
+                <img src="img/galeriaPaisajes/castillo.jpg" alt="castillo" title="castillo" />
+            </figure>
+            <figure>
+                <img src="img/galeriaPaisajes/cataratas.jpg" alt="cataratas" title="cataratas" />
+            </figure>
+            <figure>
+                <img src="img/galeriaPaisajes/jirasoles.jpg" alt="jirasoles" title="jirasoles" />
+            </figure>
+            <figure>
+                <img src="img/galeriaPaisajes/lago.jpg" alt="lago" title="lago" />
+            </figure>
+            <figure>
+                <img src="img/galeriaPaisajes/llanura.jpg" alt="llanura" title="llanura" />
+            </figure>
+            <figure>
+                <img src="img/galeriaPaisajes/puente.jpg" alt="puente" title="puente" />
+            </figure>
+            <figure>
+                <img src="img/galeriaPaisajes/volcan.jpg" alt="volcan" title="volcan" />
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>ARTEDECO</p>
+        <p>Para más información puede enviarnos un email:
+            <a href="mailto:gcaribe14@hotmail.com">Aquí</a>
+        </p>
+        <p>Si necesitas ayuda, llámanos al número de teléfono:
+            <a href="tel:+34640856854" tel="+34640856854">+34 640856854</a>
+        </p>
+        <p>&copy; 2023 ARTEDECO </p>
+    </footer>
+</body>
+
+</html>

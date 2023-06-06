@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retratos</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section>figure{
+           flex: 1;
+           min-width:300px;
+        }
+
+        section>figure:first-of-type img:hover {
+            filter: sepia(60%);
+        }
+
+        section>figure:nth-of-type(2) img:hover {
+            filter: brightness(135%) blur(2px);
+        }
+
+        section>figure:nth-of-type(3) img:hover {
+            filter: contrast(80%) opacity(50%);
+        }
+
+        section>figure:nth-of-type(4) img:hover {
+            filter:invert(100%) drop-shadow(1px 3px 5px #cccccc);
+        }
+
+        section>figure:nth-of-type(5) img:hover {
+            filter:opacity(50%) ;
+        }
+
+        section>figure:nth-of-type(6) img:hover {
+            filter: grayscale(100%) hue-rotate(79deg);
+        }
+
+        section>figure:nth-of-type(7) img:hover {
+            filter: opacity(50%) sepia(60%) ;
+        }
+
+        section>figure:nth-of-type(8) img:hover {
+            filter: invert(80%) sepia(60%);
+        }
+
+        section>figure:nth-of-type(9) img:hover {
+            filter: brightness(135%) blur(2px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="img/logoHeader.jpg" alt="logo" title="logo" />
+        </figure>
+        <h1>ArteDeco "Un recorrido por el Arte"</h1>
+        <form action="">
+            <label for="">User:</label>
+            <input type="text" name="user" placeholder="User" />
+            <br />
+            <label for="">Password:</label>
+            <input type="text" name="password" placeholder="Password" />
+            <br />
+            <button type="submit">Login</button>
+        </form>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="artedc.html">Inicio</a></li>
+            <li><a href="paisaje.html">Paisajes</a></li>
+            <li><a id="activo" href="retrato.html">Retratos</a></li>
+            <li><a href="odarte.html">Obras de arte</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Galeria</h2>
+        <section>
+            <figure>
+                <img src="img/galeriaRetratos/alia.jpg" alt="alia" title="alia" />
+            </figure>
+            <figure>
+                <img src="img/galeriaRetratos/andrea.jpg" alt="andrea" title="andrea" />
+            </figure>
+            <figure>
+                <img src="img/galeriaRetratos/elena.jpg" alt="elena" title="elena" />
+            </figure>
+            <figure>
+                <img src="img/galeriaRetratos/gusstavo.jpg" alt="gusstavo" title="gusstavo" />
+            </figure>
+            <figure>
+                <img src="img/galeriaRetratos/italo.jpg" alt="italo" title="italo" />
+            </figure>
+            <figure>
+                <img src="img/galeriaRetratos/manuel.jpg" alt="manuel" title="manuel" />
+            </figure>
+            <figure>
+                <img src="img/galeriaRetratos/matheus.jpg" alt="matheus" title="matheus" />
+            </figure>
+            <figure>
+                <img src="img/galeriaRetratos/rocio.jpg" alt="rocio" title="rocio" />
+            </figure>
+            <figure>
+                <img src="img/galeriaRetratos/ruben.jpg" alt="" title="" />
+            </figure>
+        </section>        
+    </main>
+    <footer>
+        <p>ARTEDECO</p>
+        <p>Para más información puede enviarnos un email:
+            <a href="mailto:gcaribe14@hotmail.com">Aquí</a>
+        </p>
+        <p>Si necesitas ayuda, llámanos al número de teléfono:
+            <a href="tel:+34640856854" tel="+34640856854">+34 640856854</a>
+        </p>
+        <p>&copy; 2023 ARTEDECO </p>
+    </footer>
+</body>
+
+</html>
